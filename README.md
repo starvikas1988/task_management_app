@@ -1,3 +1,71 @@
+<p>
+    1.Clone it to the local environment
+    2.Open console and run npm install, npm run dev
+    3.Open terminal and run php artisan serve
+    4.Run command php artisan migrate
+    5.Run command: php artisan db:seed --class=TaskSeeder
+</p>
+<p>
+    Api routes:
+http://127.0.0.1:8000/
+
+
+  GET|HEAD        api/tasks .............................................................. tasks.index › TaskController@index
+  POST            api/tasks .............................................................. tasks.store › TaskController@store  
+  GET|HEAD        api/tasks/{task} ......................................................... tasks.show › TaskController@show  
+  PUT|PATCH       api/tasks/{task} ..................................................... tasks.update › TaskController@update  
+  DELETE          api/tasks/{task} ................................................... tasks.destroy › TaskController@destroy  
+  GET|HEAD        api/user ..................................................................................................  
+  GET|HEAD        home .......................................................................... home › HomeController@index  
+  GET|HEAD        login .......................................................... login › Auth\LoginController@showLoginForm  
+  POST            login .......................................................................... Auth\LoginController@login  
+  POST            logout ............................................................... logout › Auth\LoginController@logout  
+ GET|HEAD        password/confirm ........................ password.confirm › Auth\ConfirmPasswordController@showConfirmForm  
+  POST            password/confirm ................................................... Auth\ConfirmPasswordController@confirm  
+  POST            password/email .......................... password.email › Auth\ForgotPasswordController@sendResetLinkEmail  
+  GET|HEAD        password/reset ....................... password.request › Auth\ForgotPasswordController@showLinkRequestForm  
+  POST            password/reset ....................................... password.update › Auth\ResetPasswordController@reset  
+  GET|HEAD        password/reset/{token} ........................ password.reset › Auth\ResetPasswordController@showResetForm  
+  GET|HEAD        register .......................................... register › Auth\RegisterController@showRegistrationForm  
+  POST            register ................................................................. Auth\RegisterController@register  
+  GET|HEAD        sanctum/csrf-cookie ..................... sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show  
+
+Create Task:
+
+GET
+http://127.0.0.1:8000/api/task
+
+POST
+http://127.0.0.1:8000/api/task
+
+payload:
+{
+    user_id:1,
+    title: 'Title',
+    description: 'Description',
+    due_date: '2024/09/05',
+    priority: 'Low'
+}
+
+http://127.0.0.1:8000/api/task/2
+PUT
+payload:
+{
+    user_id:1,
+    title: 'Title',
+    description: 'Description',
+    due_date: '2024/09/05',
+    priority: 'Low'
+}
+
+http://127.0.0.1:8000/api/task/2
+
+DELETE
+
+
+
+
+</p>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
