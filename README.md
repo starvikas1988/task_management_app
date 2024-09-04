@@ -1,10 +1,10 @@
-<p>
-    1.Clone it to the local environment
-    2.Open console and run npm install, npm run dev
-    3.Open terminal and run php artisan serve
-    4.Run command php artisan migrate
-    5.Run command: php artisan db:seed --class=TaskSeeder
-</p>
+<ul>
+    <li>1.Clone it to the local environment</li>
+    <li>2.Open console and run npm install, npm run dev</li>
+    <li>3.Open terminal and run php artisan serve</li>
+    <li>4.Run command php artisan migrate</li>
+    <li>5.Run command: php artisan db:seed --class=TaskSeeder</li>
+</ul>
 <p>
     Api routes:
 http://127.0.0.1:8000/
